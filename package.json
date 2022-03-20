@@ -1,0 +1,21 @@
+{
+  "name": "conduktor-frontend-test-server",
+  "version": "1.0.0",
+  "description": "Apollo GraphQL server for Conduktor frontend test",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon src/index"
+  },
+  "author": "Caroline Roy",
+  "license": "ISC",
+  "private": true,
+  "dependencies": {
+    "apollo-datasource-rest": "^3.5.1",
+    "apollo-server": "^3.6.4",
+    "graphql": "^16.3.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.0",
+    "nodemon": "^2.0.15"
+  }
+}
