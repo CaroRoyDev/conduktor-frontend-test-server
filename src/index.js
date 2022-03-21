@@ -1,17 +1,13 @@
 const { ApolloServer } = require("apollo-server");
 const typeDefs = require("./schema");
 const resolvers = require("./resolvers");
+const mocks = require("./datasources/mocking");
 
 const ConduktorTestAPI = require("./datasources/conduktor-test-api");
 
 const server = new ApolloServer({
   typeDefs,
-  resolvers,
-  dataSources: () => {
-    return {
-      conduktorTestAPI: new ConduktorTestAPI(),
-    };
-  },
+  mocks,
 });
 
 server.listen().then(() => {

@@ -50,6 +50,7 @@ const typeDefs = gql`
   }
 
   type TopicData {
+    id: ID!
     timestamp: String!
     key: String
     content: String
